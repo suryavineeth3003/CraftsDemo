@@ -15,31 +15,41 @@
   	1. MVVM design pattern used to keep the code modular and testable
   	2. Created a separate class called “Binding” to support one way data binding.
    	3. Used Dependency Injection principle to pass the service dependency.
-    4. Used Generics, enums , struct and protocols wherever needed.
+      4. Used Generics, enums , struct and protocols wherever needed.
    	5. Created separate class for drawing PieChart.
+      6. Followed single responsibility principle
 	
 # Usage	
 	1. To integrate the library to your project, just import
  	import IntuitCharts
 	
 	2. To create and add the ScoreView to your view, call the following class method
-		ScoreAnalysisView.scoreView(with: scoreViewModel, parentView: yourView, delegate: self)
+		ScoreAnalysisViewController.scoreView(with: scoreVM, parentController: self, delegate: self)
 		
 	3. To create and add the RangeListView to your view, call the following class method
-		RangeListView.rangeListView(with: rangeListViewModel, parentView: yourView, delegate: self)
+		 RangeListViewController.rangeListView(with: rangeListVM, parentController: self, delegate: self)
 		
 	4. Implement the respective view's delegate to handle the action events
 		extension ChartsViewController : RangeListViewProtocol {
-    		  	func didSelectInfo() {
-        			print("did select info")
-    			}	    
-		}
+            func rangeContainerView() -> UIView {
+                return customContainerView
+            }
+            
+            func didSelectInfo() {
+            }
+            
+            
+        }
 
-		extension ChartsViewController: ScoreAnalysisViewProtocol{
-    			func didSelectScoreAnalysis() {
-        			print("did select score anaysis")
-    			}
-		}
+        extension ChartsViewController: ScoreAnalysisViewProtocol{
+            func scoreContainerView() -> UIView {
+                return customContainerView
+            }
+            
+            func didSelectScoreAnalysis() {
+            }
+            
+        }
 
 # Limitation
   	1. Currently the demo app supports only landscape mode
