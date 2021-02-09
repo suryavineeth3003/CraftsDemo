@@ -1,0 +1,16 @@
+PODS:
+  - IntuitCharts (0.1.0)
+
+DEPENDENCIES:
+  - IntuitCharts (from `../`)
+
+EXTERNAL SOURCES:
+  IntuitCharts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IntuitCharts: 8dcd7088ecb7edb6f4450c62471c43915e825ee3
+
+PODFILE CHECKSUM: 07b026bdfab4da7383dabd5390ff085e2b553aa4
+
+COCOAPODS: 1.10.0

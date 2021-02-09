@@ -1,0 +1,6 @@
+framework module IntuitCharts {
+  umbrella header "IntuitCharts-umbrella.h"
+
+  export *
+  module * { export * }
+}

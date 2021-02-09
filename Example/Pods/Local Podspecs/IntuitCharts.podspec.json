@@ -1,0 +1,27 @@
+{
+  "name": "IntuitCharts",
+  "version": "0.1.0",
+  "summary": "A short description of IntuitCharts.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Surya Vineeth/IntuitCharts",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Surya Vineeth": "surya.vineeth@honeywell.com"
+  },
+  "source": {
+    "git": "https://github.com/Surya Vineeth/IntuitCharts.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "IntuitCharts/Classes/**/*",
+  "resource_bundles": {
+    "IntuitCharts": [
+      "IntuitCharts/Assets/*"
+    ]
+  }
+}

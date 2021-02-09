@@ -1,0 +1,31 @@
+{
+    "range" : [
+        {
+            "min" :825,
+            "max" :900,
+            "percentage" : 19
+        },
+        {
+            "min" :800,
+            "max" :824,
+            "percentage" : 20
+        },
+        {
+            "min" :775,
+            "max" :799,
+            "percentage" : 21
+        },
+        {
+            "min" :700,
+            "max" :774,
+            "percentage" : 21
+        },
+        {
+            "min" :300,
+            "max" :699,
+            "percentage" : 19
+        }
+        
+    ]
+    
+}
