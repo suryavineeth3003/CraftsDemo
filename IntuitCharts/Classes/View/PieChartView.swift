@@ -79,7 +79,7 @@ public class PieChartView: UIView {
         let attribs = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 9),
                        NSAttributedStringKey.foregroundColor:UIColor.black,
         ]
-        let attributedString = NSAttributedString(string: "\(self.pieChartConfig.maxValue)" , attributes: attribs)
+        let attributedString = NSAttributedString(string: "\(self.pieChartConfig.minValue)" , attributes: attribs)
         minValueTextLayer.string = attributedString
         minValueTextLayer.alignmentMode = kCAAlignmentCenter
         minValueTextLayer.name = PieChartView.textLayerName
