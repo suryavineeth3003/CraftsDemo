@@ -19,9 +19,10 @@ extension PieChartConfig {
         var pieChartConfig = PieChartConfig(with:Float(score.score),min:Float(score.min),max:Float(score.max))
         pieChartConfig.backgroundArcStrokeColor = UIColor(hex: "#F4F4F4")!
         pieChartConfig.dateFormat = "dd/MM/yyyy"
-        pieChartConfig.centerTextColor = UIColor(hex: "#E1B94D")!
-        pieChartConfig.strokeColor = UIColor(hex: "#E1B94D")!
-        pieChartConfig.arcWidth = 10
+        let strokeColor = UIColor.colorForValue(value:score.score)
+        pieChartConfig.centerTextColor = strokeColor
+        pieChartConfig.strokeColor = strokeColor
+                pieChartConfig.arcWidth = 10
         pieChartConfig.animationDuration = 2
         
         return pieChartConfig
